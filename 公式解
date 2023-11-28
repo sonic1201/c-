@@ -1,0 +1,23 @@
+#include <iostream>
+#include<math.h>
+using namespace std;
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char** argv) {
+int a;
+int b;
+int c;
+cout<<"請輸入數值:";
+cin>>a;
+cin>>b;
+cin>>c;
+if ((pow(b,2)-4*a*c)<0){
+	cout<<"無解";
+	}	 
+else if ((pow(b,2)-4*a*c)==0){
+    cout<<"單一實數解"<<-b/(2*a);
+}
+else{
+	cout<<"有兩實數解"<<(-b+(pow(b,2)-4*a*c))/(2*a)<<(-b+(pow(b,2)-4*a*c))/(2*a);
+}	
+}
