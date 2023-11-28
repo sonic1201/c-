@@ -1,0 +1,18 @@
+#include <iostream>
+#include <math.h>
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+using namespace std;
+int main(int argc, char** argv) {
+int money;
+float rate;
+float B; //本利和 
+cout<<"請輸入本金:";
+cin>>money;
+cout<<"請輸入年利率:";
+cin>>rate;
+for(int i=1;i<4;i++){
+	B= money*pow(1+(rate*0.01),i);
+	cout<<"第"<<i<<"年"<<"本利和:"<<B<<"元"<<endl;
+}
+return 0;
+}
